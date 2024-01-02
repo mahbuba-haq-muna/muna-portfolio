@@ -1,0 +1,10 @@
+.contact{
+    background-image: url(../assets/contact.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-img{
+    border-radius: 30% 70% 70% 30% / 30% 70% 30% 70% ;
+}
