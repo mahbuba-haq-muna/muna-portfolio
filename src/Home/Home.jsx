@@ -50,10 +50,10 @@ const Home = () => {
             {/* banner */}
             <div id='home' className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse gap-20">
-                    <img src={banner} className="max-w-sm banner-img border-8 border-emerald-500 mt-16 lg:mt-0" />
+                    {/* <img src={banner} className="max-w-sm banner-img border-8 border-emerald-500 mt-16 lg:mt-0" /> */}
                     <div>
                         <h1 className="text-2xl lg:text-4xl font-bold">Hi, <br /> I'm Mahbuba Haq Muna</h1>
-                        <h1 className="pb-7 text-3xl lg:text-5xl" style={{ paddingTop: '2rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                        <h1 className="pb-7 text-3xl lg:text-4xl" style={{ paddingTop: '2rem', margin: 'auto 0', fontWeight: 'normal' }}>
                             I'm a{' '}
                             <span style={{ color: '#00A881', fontWeight: 'bold' }}>
                                 
