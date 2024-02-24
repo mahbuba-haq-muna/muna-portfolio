@@ -112,16 +112,27 @@ const Home = () => {
                 <div id='edu' className='my-20'>
                     <h1 className='text-4xl font-bold text-center mb-20 mt-20 text-emerald-700'>My Education</h1>
                     <div className='grid lg:grid-cols-2'>
+                    <div className='flex'>
+                            <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
+                            <div className='border-l-2 pl-8 -ml-4 pb-16'>
+                                <span className='text-2xl'>2019</span>
+                                <h3 className='text-3xl font-bold py-5'>Master of Science (MSc)</h3>
+                                <p className='text-xl'>  Institute : Eden Mohila College, Dhaka <br />
+                                    University : University of Dhaka <br />
+                                    Department : Physics</p>
+                            </div>
+                        </div>
                         <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
-                                <span className='text-2xl'>2012</span>
-                                <h3 className='text-3xl font-bold py-5'>Secondary School Certificate (S.S.C)</h3>
-                                <p className='text-xl'>  Institute : Dakkhin Banasree Model High School <br />
-                                    Educational Board : Dhaka <br />
-                                    Group : Science</p>
+                                <span className='text-2xl'>2018</span>
+                                <h3 className='text-3xl font-bold py-5'> Bachelor of Science (BSc)</h3>
+                                <p className='text-xl'>  Institute : Eden Mohila College, Dhaka <br />
+                                    University : University of Dhaka <br />
+                                    Department : Physics</p>
                             </div>
                         </div>
+                       
                         <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
@@ -135,23 +146,15 @@ const Home = () => {
                         <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
-                                <span className='text-2xl'>2018</span>
-                                <h3 className='text-3xl font-bold py-5'> Bachelor of Science (BSc)</h3>
-                                <p className='text-xl'>  Institute : Eden Mohila College, Dhaka <br />
-                                    University : University of Dhaka <br />
-                                    Department : Physics</p>
+                                <span className='text-2xl'>2012</span>
+                                <h3 className='text-3xl font-bold py-5'>Secondary School Certificate (S.S.C)</h3>
+                                <p className='text-xl'>  Institute : Dakkhin Banasree Model High School <br />
+                                    Educational Board : Dhaka <br />
+                                    Group : Science</p>
                             </div>
                         </div>
-                        <div className='flex'>
-                            <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
-                            <div className='border-l-2 pl-8 -ml-4 pb-16'>
-                                <span className='text-2xl'>2019</span>
-                                <h3 className='text-3xl font-bold py-5'>Master of Science (MSc)</h3>
-                                <p className='text-xl'>  Institute : Eden Mohila College, Dhaka <br />
-                                    University : University of Dhaka <br />
-                                    Department : Physics</p>
-                            </div>
-                        </div>
+                       
+                        
                     </div >
                 </div >
             </section >
