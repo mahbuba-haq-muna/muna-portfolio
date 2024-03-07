@@ -48,9 +48,9 @@ const Home = () => {
             </div>
 
             {/* banner */}
-            <div id='home' className="hero min-h-screen ">
+            <div id='home' className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse gap-20">
-                    {/* <img src={banner} className="max-w-sm banner-img border-8 border-emerald-500 mt-16 lg:mt-0" /> */}
+                    <img src={banner} className="max-w-md  mt-16 lg:mt-0" />
                     <div>
                         <h1 className="text-2xl lg:text-4xl font-bold">Hi, <br /> I'm Mahbuba Haq Muna</h1>
                         <h1 className="pb-7 text-3xl lg:text-4xl" style={{ paddingTop: '2rem', margin: 'auto 0', fontWeight: 'normal' }}>
@@ -115,7 +115,6 @@ const Home = () => {
                     <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
-                                <span className='text-2xl'>2019</span>
                                 <h3 className='text-3xl font-bold py-5'>Master of Science (MSc)</h3>
                                 <p className='text-xl'>  Institute : Eden Mohila College, Dhaka <br />
                                     University : University of Dhaka <br />
@@ -125,7 +124,6 @@ const Home = () => {
                         <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
-                                <span className='text-2xl'>2018</span>
                                 <h3 className='text-3xl font-bold py-5'> Bachelor of Science (BSc)</h3>
                                 <p className='text-xl'>  Institute : Eden Mohila College, Dhaka <br />
                                     University : University of Dhaka <br />
@@ -133,7 +131,7 @@ const Home = () => {
                             </div>
                         </div>
                        
-                        <div className='flex'>
+                        {/* <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
                                 <span className='text-2xl'>2014</span>
@@ -142,8 +140,8 @@ const Home = () => {
                                     Educational Board : Dhaka <br />
                                     Group : Science</p>
                             </div>
-                        </div>
-                        <div className='flex'>
+                        </div> */}
+                        {/* <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
                                 <span className='text-2xl'>2012</span>
@@ -152,7 +150,7 @@ const Home = () => {
                                     Educational Board : Dhaka <br />
                                     Group : Science</p>
                             </div>
-                        </div>
+                        </div> */}
                        
                         
                     </div >
