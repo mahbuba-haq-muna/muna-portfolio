@@ -17,9 +17,7 @@ const Home = () => {
    
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
         console.log('Form submitted:', formData);
-        // You can send the form data to a server, perform validation, etc.
     };
     return (
         <div>
