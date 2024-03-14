@@ -1,5 +1,5 @@
 import { Typewriter } from 'react-simple-typewriter'
-import { FaBook, FaDownload, FaEnvelope, FaGithub, FaGraduationCap, FaHome, FaInstagram, FaLinkedin,  FaMap, FaPen, FaPhone, FaUser } from "react-icons/fa";
+import { FaBook, FaDownload, FaEnvelope, FaGithub, FaGraduationCap, FaHome, FaInstagram, FaLinkedin, FaMap, FaPen, FaPhone, FaUser } from "react-icons/fa";
 import about from '../assets/coding.jpg'
 import banner from '../assets/banner.png'
 import project1 from '../assets/event.png'
@@ -9,12 +9,14 @@ import { useState } from 'react';
 import './home.css'
 import Skill from './Skill';
 import Contact from './Contact';
+import animation from "./coding.json"
+import Lottie from 'lottie-react';
 
 
 
 const Home = () => {
     const [formData, setFormData] = useState()
-   
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
@@ -22,7 +24,7 @@ const Home = () => {
     return (
         <div>
             {/* navbar */}
-            <div className="navbar bg-black bg-opacity-25 w-full fixed z-10">
+            <div className="navbar bg-blue-950 bg-opacity-25 w-full fixed z-10">
                 <div className=" navbar-center mx-auto lg:hidden flex">
                     <ul className="menu menu-horizontal px-1 text-emerald-700 text-xl shadow-lg ">
                         <li><a href='#home'><FaHome></FaHome></a></li>
@@ -46,15 +48,16 @@ const Home = () => {
             </div>
 
             {/* banner */}
-            <div id='home' className="hero min-h-screen">
+            <div id='home' className="hero min-h-screen shadow-lg">
                 <div className="hero-content flex-col lg:flex-row-reverse gap-20">
-                    <img src={banner} className="max-w-md  mt-16 lg:mt-0" />
-                    <div>
+                    {/* <img src={banner} className="max-w-md  mt-16 lg:mt-0" /> */}
+                   
+                    <div className='mt-16'>
                         <h1 className="text-2xl lg:text-4xl font-bold">Hi, <br /> I'm Mahbuba Haq Muna</h1>
                         <h1 className="pb-7 text-3xl lg:text-4xl" style={{ paddingTop: '2rem', margin: 'auto 0', fontWeight: 'normal' }}>
                             I'm a{' '}
                             <span style={{ color: '#00A881', fontWeight: 'bold' }}>
-                                
+
                                 <Typewriter
                                     words={['Frontend Developer', 'MERN Stack Enthusiast', 'Frontend Developer']}
                                     loop={5}
@@ -74,6 +77,13 @@ const Home = () => {
                             <div><a href=""> <FaInstagram className='text-3xl' /></a></div>
                         </div>
                     </div>
+                    <div>
+                   <Lottie
+                        className=" w-72 mx-auto lg:mt-10"
+                        animationData={animation}
+                        loop={true}
+                    />
+                   </div>
 
                 </div>
             </div>
@@ -83,8 +93,8 @@ const Home = () => {
 
             <section id='about' className='lg:px-20 my-20 '>
                 <h1 className='text-4xl font-bold text-center mb-5 text-emerald-700'>About Me</h1>
-                <div className="card lg:card-side bg-emerald-100 shadow-xl w-full">
-                    <div className='lg:w-1/2 '><img src={about} alt="Album" className='h-full' /></div>
+                <div className="card lg:card-side bg-emerald-100 w-full">
+                    <div className='lg:w-1/2 '><img src={about} alt="Album" className='h-full rounded-l-xl' /></div>
                     <div className="card-body lg:w-1/2 ">
                         <h2 className="card-title lg:text-4xl">Frontend Developer on a MERN Stack Adventure</h2>
                         <p className='lg:text-md py-5'>Hi there! I'm Mahbuba Haq Muna, a dedicated front-end developer with a strong background in React. Turning design concepts into dynamic, aesthetically pleasing online interfaces brings me joy. At the moment, I'm fully engrossed in the MERN stack, improving my Node.js, Express.js, and MongoDB skills to build robust and complete apps.
@@ -93,7 +103,7 @@ const Home = () => {
 
                         </p>
                         <div className="card-actions ">
-                            <a href="/public/mahbuba-muna-resume.pdf" download> <button className="btn bg-emerald-500  text-white hover:bg-emerald-700"><FaDownload /> Download CV</button></a>
+                            <a href="/public/muna_resume_with_team_project.pdf" download> <button className="btn bg-emerald-500  text-white hover:bg-emerald-700"><FaDownload /> Download CV</button></a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +120,7 @@ const Home = () => {
                 <div id='edu' className='my-20'>
                     <h1 className='text-4xl font-bold text-center mb-20 mt-20 text-emerald-700'>My Education</h1>
                     <div className='grid lg:grid-cols-2'>
-                    <div className='flex'>
+                        <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
                                 <h3 className='text-3xl font-bold py-5'>Master of Science (MSc)</h3>
@@ -128,7 +138,7 @@ const Home = () => {
                                     Department : Physics</p>
                             </div>
                         </div>
-                       
+
                         {/* <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-10 bg-slate-100' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16'>
@@ -149,8 +159,8 @@ const Home = () => {
                                     Group : Science</p>
                             </div>
                         </div> */}
-                       
-                        
+
+
                     </div >
                 </div >
             </section >
@@ -209,9 +219,9 @@ const Home = () => {
                         <div className='w-1/2 mx-auto pt-20'>
                             <div className='flex gap-5'><FaEnvelope className='lg:text-3xl'></FaEnvelope> <h3 className='lg:text-2xl font-semibold'> muna3828@gmail.com </h3> </div>
                             <div className='flex gap-5 my-5 lg:my-10'><FaPhone className='lg:text-3xl'></FaPhone> <h3 className='lg:text-2xl font-semibold'> 01927969885 </h3>
-                             </div>
+                            </div>
                             <div className='flex gap-5 my-5 lg:my-10'><FaMap className='lg:text-3xl'></FaMap> <h3 className='lg:text-2xl font-semibold'> Dhaka, Bangladesh </h3>
-                             </div>
+                            </div>
                         </div>
                         <Contact></Contact>
                     </div>
@@ -224,7 +234,7 @@ const Home = () => {
                 <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
 
                     <aside>
-                        <p>Copyright © 2023 - All right reserved by Mahbuba Haq Muna</p>
+                        <p>Copyright © 2024 - All right reserved by Mahbuba Haq Muna</p>
                     </aside>
                 </footer>
             </section>
