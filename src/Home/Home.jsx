@@ -177,7 +177,7 @@ const Home = () => {
                         <div className="card-body items-center text-center">
                             <h2 className="card-title mb-5">Wedding Planner</h2>
                             <div>
-                                <a href="https://65240f35b28fb8052cedcc07--bejewelled-lamington-418524.netlify.app/"><button className='btn border-2 border-emerald-500 rounded-3xl lg:mr-10'>Live View</button></a>
+                                <a href="https://65f57ff7a4d565a8616a2c7b--bejewelled-lamington-418524.netlify.app/"><button className='btn border-2 border-emerald-500 rounded-3xl lg:mr-10'>Live View</button></a>
                                 <a href="https://github.com/mahbuba-haq-muna/event-management"><button className='btn border-2 border-emerald-500 rounded-3xl '>Code View</button></a>
                             </div>
                         </div>
