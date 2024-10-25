@@ -10,8 +10,6 @@ import firebase from '../assets/firebase_logo.png'
 import redux from '../assets/redux.png'
 import native from '../assets/native.png'
 
-
-
 const Skill = () => {
     return (
         <div className='lg:grid lg:grid-cols-2 gap-10'>

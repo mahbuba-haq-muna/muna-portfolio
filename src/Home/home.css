@@ -1,9 +1,29 @@
 .contact {
-  background-image: url(../assets/contact.jpg);
+  position: relative;
+  background-image: url(../assets/contact2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden; /* Ensures the overlay fits within the .contact area */
 }
+
+/* Overlay with a pseudo-element */
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+  z-index: 1; /* Places overlay above the background image */
+}
+
+.contact-content {
+  position: relative;
+  z-index: 2; /* Places content above the overlay */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 
 .active-link {
   color: #34d399;

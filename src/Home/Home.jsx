@@ -5,6 +5,8 @@ import banner from '../assets/banner.png'
 import project1 from '../assets/event.png'
 import project2 from '../assets/hotel.png'
 import project3 from '../assets/tech.png'
+import project4 from '../assets/eco.jpeg'
+
 import react from '../assets/icon-6.png'
 import html from '../assets/icon-1.png'
 import css from '../assets/icon-2.png'
@@ -56,7 +58,7 @@ const Home = () => {
                                 </span>
                             </h1>
                             <p className='lg:text-xl text-white'>Passionate Frontend Developer | Crafting Engaging Web Experiences</p>
-                            <div className='text-center mt-10'><a href="#contact"><button className="py-1 rounded-md bg-emerald-500 w-32 text-white hover:bg-emerald-700">Hire Me</button></a></div>
+                            <div className='text-center mt-10'><a href="#contact"><button className="py-1 rounded-md bg-emerald-500 w-32 text-white hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-500">Hire Me</button></a></div>
                             <div className='flex gap-12 justify-center mb-28 lg:mb-0 mt-20'>
                                 <div><a href="https://github.com/mahbuba-haq-muna"> <FaGithub className='text-4xl text-white hover:text-emerald-500' /></a></div>
                                 <div><a href="https://www.linkedin.com/in/mahbuba-haq-muna-a51972253/"> <FaLinkedin className='text-4xl text-white hover:text-emerald-500' /></a></div>
@@ -71,7 +73,7 @@ const Home = () => {
             {/* about me start*/}
 
             <Element name="about" className='lg:px-20 px-5 py-20 '>
-                <h1 className='text-4xl font-bold text-center mb-5 text-emerald-500'>About Me</h1>
+                <h1 className='text-3xl lg:text-4xl font-bold text-center mb-5 text-emerald-500'>About Me</h1>
                 <div className="lg:flex gap-20 w-full">
 
                     <div className='relative lg:w-1/2'>
@@ -95,8 +97,8 @@ const Home = () => {
                             I'm looking for possibilities to work with others on challenging and inspiring projects, lending my abilities as needed. Let's get in touch and start creating amazing digital experiences together!
 
                         </p>
-                        <div className="mx-auto">
-                            <a href="/public/Mahbuba_Haq_Muna_resume_Frontend.pdf" download> <button className="flex flex-row items-center gap-5 px-5 py-2 rounded-2xl bg-emerald-500 mx-auto text-white hover:bg-emerald-700"><FaDownload /> Download CV</button></a>
+                        <div className="mx-auto ">
+                            <a href="/public/Mahbuba_Haq_Muna_resume_Frontend.pdf" download> <button className="hover:shadow-lg hover:shadow-emerald-500 flex flex-row items-center gap-5 px-5 py-2 rounded-2xl bg-emerald-500 mx-auto text-white hover:bg-emerald-700 "><FaDownload /> Download CV</button></a>
                         </div>
                     </div>
                 </div>
@@ -106,23 +108,14 @@ const Home = () => {
 
             {/* skills section start */}
             <Element name="skill" className='lg:px-20 px-5 lg:my-20' >
-                <h1 className='text-4xl font-bold text-center mb-10 text-emerald-500'>My Skills</h1>
+                <h1 className='text-3xl lg:text-4xl font-bold text-center mb-10 text-emerald-500'>My Skills</h1>
                 <Skill></Skill>
             </Element>
 
             {/* experience section start */}
             <Element name="experience" className='lg:px-20 mt-20'>
-                <h1 className='text-4xl font-bold text-center mb-10 text-emerald-500'>My Experience And Education</h1>
-
-                {/* <div className='flex'>
-
-                    <div className='text-gray-100 pb-16'>
-                        <h3 className='text-3xl font-bold py-5'>React Native Intern</h3>
-                        <p className='text-xl font-semibold'>Company: TS4U limited</p>
-                        <p className='text-xl py-2'>Duration: May 2024 - Present</p>
-                        <p className='text-xl'> Description: As a React Native intern at TS4U Ltd., I have been actively contributing to mobile application development projects. My responsibilities include building and optimizing components, integrating APIs, and working collaboratively in a team environment to deliver high-quality mobile experiences.</p>
-                    </div>
-                </div> */}
+                <h1 className='text-3xl lg:text-4xl font-bold text-center text-emerald-500'>My Experience And Education</h1>
+               
             </Element >
 
 
@@ -130,11 +123,11 @@ const Home = () => {
 
 
             {/* education */}
-            <Element name="edu" className='lg:px-20 mt-20'>
-                
+            <Element name="edu" className='lg:px-20 mt-10 px-5'>
+
                 <div className='grid lg:grid-cols-2'>
                     <div>
-                    <h1 className='text-3xl font-bold text-center mb-20 text-emerald-500'>Education</h1>
+                        <h1 className='text-2xl lg:text-3xl font-bold text-center lg:mb-20 text-emerald-500'>Education</h1>
                         <div className='flex'>
                             <FaGraduationCap className='text-4xl text-emerald-500 z-20 bg-black' />
                             <div className='border-l-2 pl-8 -ml-4 pb-16 text-gray-100'>
@@ -155,12 +148,12 @@ const Home = () => {
                         </div>
                     </div>
                     <Element name="experience" className=''>
-                        <h1 className='text-3xl font-bold text-center mb-20 text-emerald-500'>Experience</h1>
+                        <h1 className='text-2xl lg:text-3xl font-bold text-center lg:mb-20 text-emerald-500'>Experience</h1>
 
-                        <div className='flex'>
-                        {/* <FaGraduationCap className='text-4xl text-emerald-500 z-30 bg-black' /> */}
-                        <FaBriefcase className='text-emerald-500 text-8xl'/>
-                            <div className='border-l-2 mt-16 pl-5 -ml-3 pb-16 text-gray-100'>
+                        <div className='lg:pt-16 pl-2'>
+                            {/* <FaGraduationCap className='text-4xl text-emerald-500 z-30 bg-black' /> */}
+                            <FaBriefcase className='text-emerald-500 text-2xl' />
+                            <div className='border-l-2 pl-7 ml-2 mt-2 pb-16 text-gray-100'>
                                 <h3 className='text-3xl font-bold py-5'>React Native Intern</h3>
                                 <p className='text-xl font-semibold'>Company: TS4U limited</p>
                                 <p className='text-xl py-2'>Duration: May 2024 - Present</p>
@@ -174,56 +167,102 @@ const Home = () => {
 
 
             {/* projects section start */}
-            <Element name="project" className='lg:px-20 my-20 '>
-                <h1 className='text-4xl font-bold text-center mb-5 text-emerald-700'>My projects</h1>
-                <div className="grid lg:grid-cols-3 gap-10">
-                    <div className="card bg-base-100 shadow-xl">
-                        <div className='h-56 overflow-y-auto'>
-                            <img src={project1} alt="" />
+            <Element name="project" className='lg:px-20 my-20 px-5'>
+                <h1 className='text-3xl lg:text-4xl font-bold text-center mb-5 text-emerald-500'>My projects</h1>
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+                    <div className="bg-gray-800 shadow-xl shadow-emerald-900 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-700">
+                        <div className="h-56 overflow-y-scroll">
+                            <img src={project4} alt="Eco Smart Bin" className="w-full" />
                         </div>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title mb-5">Wedding Planner</h2>
-                            <div>
-                                <a href="https://65f57ff7a4d565a8616a2c7b--bejewelled-lamington-418524.netlify.app/"><button className='btn border-2 border-emerald-500 rounded-3xl lg:mr-10'>Live View</button></a>
-                                <a href="https://github.com/mahbuba-haq-muna/event-management"><button className='btn border-2 border-emerald-500 rounded-3xl '>Code View</button></a>
+                        <div className="p-6 text-center text-gray-100">
+                            <h2 className="text-xl font-semibold mb-4 tracking-wide">Eco Smart Bin</h2>
+                            <div className="flex justify-center space-x-4">
+                                <a href="https://eco-smart-bins.netlify.app/">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Live View
+                                    </button>
+                                </a>
+                                <a href="https://github.com/Raisul-24/EcoSmart-Bins-client-side">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Code View
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div className="card bg-base-100 shadow-xl">
-                        <div className='h-56 overflow-y-auto'>
-                            <img src={project2} alt="" />
+                    <div className="bg-gray-800 shadow-xl shadow-emerald-900 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-700">
+                        <div className="h-56 overflow-y-scroll">
+                            <img src={project1} alt="Wedding Planner Project" className="w-full" />
                         </div>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title mb-5">Royal Oasis</h2>
-                            <div>
-                                <a href="https://royel-oasis-client.web.app/"><button className='btn border-2 border-emerald-500 rounded-3xl lg:mr-10'>Live View</button></a>
-                                <a href="https://github.com/mahbuba-haq-muna/hotel_booking_client"><button className='btn border-2 border-emerald-500 rounded-3xl '>Code View</button></a>
+                        <div className="p-6 text-center text-gray-100">
+                            <h2 className="text-xl font-semibold mb-4 tracking-wide">Wedding Planner</h2>
+                            <div className="flex justify-center space-x-4">
+                                <a href="https://65f57ff7a4d565a8616a2c7b--bejewelled-lamington-418524.netlify.app/">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Live View
+                                    </button>
+                                </a>
+                                <a href="https://github.com/mahbuba-haq-muna/event-management">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Code View
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div className="card bg-base-100 shadow-xl">
-                        <div className='h-56 overflow-y-auto'>
-                            <img src={project3} alt="" />
+                    <div className="bg-gray-800 shadow-xl shadow-emerald-900 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-700">
+                        <div className="h-56 overflow-y-scroll">
+                            <img src={project2} alt="Royal Oasis" className="w-full" />
                         </div>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title mb-5">Flow Tech</h2>
-                            <div>
-                                <a href="https://flow-tech-client.web.app/"><button className='btn border-2 border-emerald-500 rounded-3xl lg:mr-10'>Live View</button></a>
-                                <a href="https://github.com/mahbuba-haq-muna/flow-tech-client"><button className='btn border-2 border-emerald-500 rounded-3xl '>Code View</button></a>
+                        <div className="p-6 text-center text-gray-100">
+                            <h2 className="text-xl font-semibold mb-4 tracking-wide">Wedding Planner</h2>
+                            <div className="flex justify-center space-x-4">
+                                <a href="https://royel-oasis-client.web.app/">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Live View
+                                    </button>
+                                </a>
+                                <a href="https://github.com/mahbuba-haq-muna/hotel_booking_client">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Code View
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
+                    <div className="bg-gray-800 shadow-xl shadow-emerald-900 rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-700">
+                        <div className="h-56 overflow-y-scroll">
+                            <img src={project3} alt="Flow Tech" className="w-full" />
+                        </div>
+                        <div className="p-6 text-center text-gray-100">
+                            <h2 className="text-xl font-semibold mb-4 tracking-wide">Flow Tech</h2>
+                            <div className="flex justify-center space-x-4">
+                                <a href="https://flow-tech-client.web.app/">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Live View
+                                    </button>
+                                </a>
+                                <a href="https://github.com/mahbuba-haq-muna/flow-tech-client">
+                                    <button className="btn border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:border-emerald-500 hover:text-gray-900 transition-all duration-200 px-3 py-1 rounded-full text-sm">
+                                        Code View
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </Element>
             {/* projects section end */}
 
             {/* contact me start */}
-            <Element name="contact" className='my-20'>
+            <Element name="contact" className='lg:my-20 lg:px-20 px-5'>
 
-                <h1 className='text-4xl font-bold text-center mb-5 text-emerald-700'>Contact me</h1>
-                <div className='contact'>
-                    <div className=' lg:p-20 lg:flex gap-10'>
-                        <div className='w-1/2 mx-auto pt-20'>
+                <h1 className='text-3xl lg:text-4xl font-bold text-center mb-5 text-emerald-500'>Contact me</h1>
+                <div className='contact '>
+                    <div className=' lg:flex justify-between contact-content'>
+                        <div className='lg:w-1/2 mx-auto pt-20'>
                             <div className='flex gap-5'><FaEnvelope className='lg:text-3xl'></FaEnvelope> <h3 className='lg:text-2xl font-semibold'> muna3828@gmail.com </h3> </div>
                             <div className='flex gap-5 my-5 lg:my-10'><FaPhone className='lg:text-3xl'></FaPhone> <h3 className='lg:text-2xl font-semibold'> 01927969885 </h3>
                             </div>
@@ -238,7 +277,7 @@ const Home = () => {
 
             {/* footer */}
             <section>
-                <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+                <footer className="text-gray-100 text-center p-10 bg-base-200 text-base-content rounded">
 
                     <aside>
                         <p>Copyright © 2024 - All right reserved by Mahbuba Haq Muna</p>

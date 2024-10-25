@@ -107,20 +107,7 @@ const Navbar = () => {
               </Link>
               <FaPen className="text-sm" />
             </li>
-            <li className="flex flex-row text-white font-semibold lg:text-lg gap-2 items-center hover:text-emerald-600 active:text-emerald-500">
-              <Link
-                to="services"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer"
-                onClick={handleLinkClick}
-                activeClass="active-link"
-                spy={true}
-              >
-                Services
-              </Link>
-              <FaRocket className="text-sm" />
-            </li>
+            
             <li className="flex flex-row text-white font-semibold lg:text-lg gap-2 items-center hover:text-emerald-600 active:text-emerald-500">
               <Link
                 to="experience"
@@ -134,19 +121,7 @@ const Navbar = () => {
               </Link>
               <FaBriefcase className="text-sm" />
             </li>
-            <li className="flex flex-row text-white font-semibold lg:text-lg gap-2 items-center hover:text-emerald-600 active:text-emerald-500">
-              <Link
-                to="edu"
-                smooth={true}
-                duration={500}
-                className="cursor-pointer"
-                onClick={handleLinkClick}
-                activeClass="active-link"
-              >
-                Education
-              </Link>
-              <FaGraduationCap className="lg:text-lg" />
-            </li>
+           
             <li className="flex flex-row text-white font-semibold lg:text-lg gap-2 items-center hover:text-emerald-600 active:text-emerald-500">
               <Link
                 to="project"
